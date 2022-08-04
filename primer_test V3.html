@@ -24,7 +24,7 @@
         document.write("<br>");
         document.write("<br>");
 
-        document.write("Juan nació en el año...");
+        document.write("Carlos nació en el año...");
         document.write("<br>");
         document.write(2020 - 15);
         document.write("<br>");
@@ -42,7 +42,7 @@
         document.write( "Pedro tiene " + (2021 - 1995) + " años");
         document.write("<br>");
         document.write("<br>");
-        document.write( "Juan tiene " + (2020 - 2005) + " años");
+        document.write( "Carlos tiene " + (2020 - 2005) + " años");
         document.write("<br>");
         document.write("<br>");
     </script>
@@ -64,7 +64,7 @@
         document.write( "Pedro tiene " + (year - 1995) + " años");
         document.write("<br>");
         document.write("<br>");
-        document.write( "Juan tiene " + (year - 2005) + " años");
+        document.write( "Carlos tiene " + (year - 2005) + " años");
         document.write("<br>");
         document.write("<br>");
     </script>
@@ -74,9 +74,9 @@
 
 <script>
 
-    var year = 2022
+    var year = 2022;
 
-    document.write("<h3>Ejemplo 5</h3>")
+    document.write("<h3>Ejemplo 5</h3>");
     document.write("En este ejemplo le asigno un valor distinto a una variable, dicha vaiable ha sido utilizada en los siguientes casos:");
     document.write("<br>");
     document.write("<br>");  
@@ -92,7 +92,7 @@
     document.write("<br>");
 
     year = 2018
-    document.write( "Juan tiene " + (year - 2005) + " años");
+    document.write( "Carlos tiene " + (year - 2005) + " años");
     document.write("<br>");
     document.write("<br>");
 </script>
@@ -102,7 +102,7 @@
 
 <script>
 
-    var promedio = (5+12+13)/3
+    var promedio = (5+12+13)/3;
 
     document.write("<h3>Ejemplo 6</h3>")
     document.write("En este otro ejemplo le asigno un valor distinto a una variable, dicha vaiable ha sido utilizada para deterimar <br> el promedio de edades presentes en el ejemplo anterior:");
@@ -112,8 +112,26 @@
     document.write( "El promedio de edades de los tres hombres es de " + promedio + " años.");
     document.write("<br>");
     document.write("<br>");
-    document.write("Nota: La función 'Math.round' se utiliza para rendondear cantidades.")
+    document.write("Nota: La función 'Math.round' se utiliza para rendondear cantidades.");
 
 </script>
 
- 
+<br>
+<br>
+
+<script>
+    var edadjuan = 5;
+    var edadpedro = 12;
+    var edadcarlos = 13;
+
+    var promedio = (edadjuan + edadpedro + edadcarlos) / 3;
+
+    var nombre1 = " Juan";
+    var nombre2 = " Pedro";
+    var nombre3 = " Carlos";
+
+    document.write("<h3>Ejemplo 7</h3>");
+    document.write("El primedio de edades de " + nombre1 + "," + nombre2 + "," + nombre3 + " es: " + Math.round(promedio));
+    document.write("<br>");
+    document.write("<br>");
+</script>
