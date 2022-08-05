@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function saltarlinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+    
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarlinea();
+
+    }
+
+    var fechan1 = 1996
+    var fechan2 = 2001
+    var year = 2022
+    
+    imprimir("Ejercio: Diferencia de edades.");
+    
+    imprimir("Mi hermano tiene " + (year - fechan2) + " años, mientras que yo tengo " + (year - fechan1) + " años.");
+
+    imprimir("La diferencia de edades entre mi hermano y yo es de: " + ((year - fechan1) - (year - fechan2)) + " años.");
+
+
+</script>
