@@ -18,13 +18,13 @@
 
         }
 
-        var weight = 245;
-        var height = 5.11;
-        var IMC = (weight / height)*height;
+        var weight = 110;
+        var height = 1.55;
+        var IMC = weight / (height * height);
         var name1 = "David";
 
         print("<h3>Ejercicio: Calculo del IMC</h3>");
-        print("El IMC de " + name1 + " es: " + IMC);
+        print("El IMC de " + name1 + " es: " + Math.round(IMC));
     
     </script>
 
