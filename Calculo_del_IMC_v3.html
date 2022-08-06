@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+    <meta charset="UTF-8">
+
+    <script>
+
+        function jumpline() {
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<hr>");
+            }
+
+        function print(phrase) {
+
+            document.write("<big>" + phrase + "</big>");
+            jumpline();
+
+        }
+
+        var name1 = prompt("Ingrese su nombre");
+        var weight = prompt("Ingrese su peso");
+        var height = prompt("Ingrese su altura");
+        var IMC = weight / (height * height);
+        
+
+        print("<h3>Ejercicio: Calculo del IMC</h3>");
+        print("El IMC de " + name1 + " es: " + Math.round(IMC));
+
+        if (IMC < 18.5) {
+            print("IMC por debajo del recomendado");
+
+        }
+    
+        if (IMC > 18.5 && IMC <= 24.9) {
+            print("IMC recomendado");
+
+        }
+        
+        if (IMC > 24.9 && IMC <= 25.0) {
+            print("Sobrepeso");
+
+        }
+
+        if (IMC > 25.0 && IMC <=29.9) {
+            print("Pre-obesidad");
+
+        }
+
+        if (IMC > 29.9 && IMC <=30.0){
+            print("Obesidad");
+        }
+
+
+        if (IMC > 30.0 && IMC <= 34.9){
+            print("Obesidad clase 1");
+
+        }
+
+        if (IMC >=35.0 && IMC <= 39.9 ){
+            print("Obesidad clase 2");
+        }
+
+        if (IMC >= 40) {
+            print("Obesidad clase 4");
+        }
+    </script>
+
+
+
+</html>
