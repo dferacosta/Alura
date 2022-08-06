@@ -25,14 +25,15 @@
             
         }
 
-        var weight1 = prompt("Informe su peso");
-        var height1 = prompt("Informe su altura");
+        var username = prompt("Informe su nombre");
+        var weight1 = prompt(username + ", informe su peso");
+        var height1 = prompt(username + ", informe su altura");
 
         imc1 = calcimc(weight1,height1);
-
-        print("<h3>Uso de la utildidad: Prompt</h3>");
-        print("El promedio del IMC calculaddo es: " + Math.round(imc1));
         
+        print("<h3>Uso de la utildidad: Prompt</h3>");
+        print(username + ", su promedio del IMC calculaddo es: " + Math.round(imc1));
+
     </script>
 
 
