@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+    <meta charset="UTF-8">
+
+    <script>
+
+        function jumpline() {
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<hr>");
+            }
+
+        function print(phrase) {
+
+            document.write("<big>" + phrase + "</big>");
+            jumpline();
+
+        }
+
+        var challenge = Math.round(Math.random()*10);
+        var answer = parseInt(prompt("Ingrese un número del 1-10"));
+
+            print("<h1>Ejercicio: Juego de adivinanza</h1>")
+
+        if (answer == challenge){
+
+            print("Su respuesta es la correcta, ha ganado el sorteo!");
+        }
+
+        if (answer != challenge){
+
+            print("Uy! Casi lo logras, la respuesta correcta es " + challenge);
+        }
+
+    </script>
+
+
+
+</html>
