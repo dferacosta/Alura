@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    
+    <meta charset="UTF-8">
+
+
+
+        <input/>
+        <button>Realizar verificacion</button>
+        
+        <script>         
+        var secreto = 5;
+        var input = document.querySelector("input");
+
+            function verificar() {
+
+                if (parseInt(input.value) == secreto) {
+                    alert("Respuesta correcta.");
+                }
+
+                else {
+                    alert("Respuesta incorrecta.");
+                }
+                
+            }   
+
+            var button = document.querySelector("button");
+            button.onclick = verificar;    
+
+        </script>
+
+
+</html>
