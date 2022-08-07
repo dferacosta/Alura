@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+    function jumpline() {
+        document.write("<br>");
+        document.write("<hr>");
+    }
+
+    function print(frase) {
+        document.write(frase);
+        jumpline();
+    }
+
+    var fifayear1 = 1930;
+    var maxrange = parseInt(prompt("Ingrese el rango máximo de búsqueda"));
+
+         print("<h2>Fifa World Cup</h2>");
+            document.write("<br>");
+
+         while (fifayear1 <= maxrange){
+           
+            print("En el año " + fifayear1 + " hubo un campeonato mundial de la FIFA.");
+            fifayear1 = fifayear1 + 4;
+
+    }
+
+</script> 
