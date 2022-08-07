@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+    <meta charset="UTF-8">
+
+    <h1>"EJERCICIO: Calcular la edad promedio de una familia"</h1>
+
+ 
+ <script>
+
+        function jumpline() {
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<hr>");
+    }
+
+         function print(phrase) {
+
+            document.write(phrase);
+            jumpline();
+    }
+
+    var numerodemiembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia"));
+    var contador = 1;
+    var totaledades = 0
+
+    /*Las variables deben de estar fuera de la funcion "While"*/
+
+        while(contador <= numerodemiembros){
+            
+            
+            edad = parseInt(prompt("Ingrese la edad de cada miembro"));  
+            totaledades = totaledades + edad;
+            contador++  
+
+        }
+
+        edadpromedio = totaledades/numerodemiembros;
+    
+    print("el promedio de edades de la familia es: " + edadpromedio + ".");
+    print(totaledades);
+    print("Fin");
+     
+
+
+    ;
+
+    
+
+</script>
+
+</html>
