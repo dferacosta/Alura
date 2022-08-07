@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+    <meta charset="UTF-8">
+
+    <script>
+
+        function jumpline() {
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<hr>");
+            }
+
+        function print(phrase) {
+
+            document.write("<big>" + phrase + "</big>");
+            jumpline();
+
+        }
+
+        var challenge = Math.round(Math.random()*10);
+        var intentos = 3;
+        var contador = 1;
+
+            print("<h1>Ejercicio: Juego de adivinanza</h1>")
+
+        while(contador <= intentos){ 
+            
+            var answer = parseInt(prompt("Ingrese un número entre 0-10")); 
+
+        
+            if (answer == challenge){
+
+                alert("Su respuesta es la correcta, acertaste en el intento #" + contador + " ha ganado el sorteo!");
+                break;
+            }
+
+            else {
+
+                alert("Uy! Casi lo logras, la respuesta correcta es " + challenge);
+            }
+            
+            contador++;
+        }
+
+        print("Reto finalizado");
+        
+    </script>
+
+
+
+</html>
