@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<input/>
+<button>Realizar verificacion</button>
+
+<script>       
+        
+    function random(){
+        return Math.round(Math.random()*10);
+    }
+
+    function sorteo (cantidad){
+        var secreto = [];
+        var contador = 1;
+
+
+        while (contador <= cantidad){
+            var numrandom = random();
+            console.log(numrandom);
+            var respuesta = false;
+
+            if (numrandom != 0){
+                for(var lugar = 0; lugar < secreto.length; lugar++){ 
+                            if (numrandom == secreto[lugar]) {
+                                respuesta = true;
+                                break;
+                            }                
+                        }
+                        
+                        if (respuesta == false){
+                            secreto.push(numrandom);
+                            contador++;
+
+                        }            
+                                            
+            }
+                        
+        }
+        return secreto
+    
+    }
+        
+    var secreto = sorteo(4);
+    console.log(secreto);
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verificar() {
+        
+        var respuesta = false;
+
+        for(var lugar = 0; lugar < secreto.length; lugar++){
+
+            if(parseInt(input.value) == secreto[lugar]){
+
+                alert("Respuesta correcta.");
+                respuesta = true;
+                break;
+
+            }
+
+
+
+        }
+
+        if (respuesta == false) {
+
+            alert("Respuesta incorrecta");
+
+        }
+
+        input.value = "";
+        input.focus();
+
+    }
+    
+	var button = document.querySelector("button");
+	button.onclick = verificar;
+
+</script>
+
+</html>
+
+            
+            
